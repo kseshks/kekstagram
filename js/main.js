@@ -1,3 +1,4 @@
+const PHOTO_COUNT = 25;
 const NAMES = [
   'Даша',
   'Маша',
@@ -75,12 +76,12 @@ const createPhoto = (index) => {
   };
 };
 
-const generatePhotos = () => Array.from({length: 25}, (_, index) => createPhoto(index + 1));
+const generatePhotos = () => Array.from({length: PHOTO_COUNT}, createPhoto);
 
 const photos = generatePhotos();
 
 console.log(photos);
 
 //только через table видно результат почему то
-//console.table(photos);
-//console.table(photos[0].comments);
+console.table(photos);
+console.table(photos[0].comments);
