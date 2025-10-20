@@ -1,4 +1,3 @@
-
 function checkMeetingAvailability(startWork, endWork, startMeeting, meetingDuration) {
 
   function timeToMinutes(time){
@@ -12,10 +11,7 @@ function checkMeetingAvailability(startWork, endWork, startMeeting, meetingDurat
   startMeeting = timeToMinutes(startMeeting);
   const endMeeting = startMeeting + meetingDuration;
 
-  //console.log(endMeeting <= endWork && startMeeting >= startWork);
-
   return endMeeting <= endWork && startMeeting >= startWork;
-
 };
 
 checkMeetingAvailability('08:00', '17:30', '14:00', 90); // true
