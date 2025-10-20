@@ -1,3 +1,4 @@
+
 function checkMeetingAvailability(startWork, endWork, startMeeting, meetingDuration) {
 
   function timeToMinutes(time){
