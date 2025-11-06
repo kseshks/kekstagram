@@ -14,7 +14,7 @@ const renderPicture = (picture) => {
 };
 
 const renderPictures = (objects) => {
-  pictures.querySelectorAll('.picture').forEach(picture => picture.remove());
+  pictures.querySelectorAll('.picture').forEach((picture) => picture.remove());
 
   const fragment = document.createDocumentFragment();
   for (let i = 0; i < objects.length; i++) {
